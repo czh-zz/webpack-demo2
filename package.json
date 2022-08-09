@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "rm -rf dist&&webpack"
+    "build": "rm -rf dist&&webpack --config webpack.config.prod.js"
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
@@ -17,6 +17,7 @@
   "repository": "git@github.com:czh-zz/webpack-demo1.git",
   "author": "chenzh <515740090@qq.com>",
   "dependencies": {
+    "mini-css-extract-plugin": "^2.6.1",
     "webpack-dev-server": "^4.9.3"
   }
 }

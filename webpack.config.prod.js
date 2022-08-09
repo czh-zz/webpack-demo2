@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.js',
     output: {
         //filename: 'index.js',
@@ -28,10 +28,10 @@ module.exports = {
             {
                 test: /\.css$/i,
                 //抽成文件：
-                use: [MiniCssExtractPlugin.loader, "css-loader"],
+                //use: [MiniCssExtractPlugin.loader, "css-loader"],
 
                 //再页面生成
-                //use: ['style-loader', 'css-loader'],
+                use: ['style-loader', 'css-loader'],
             },
         ],
     },
