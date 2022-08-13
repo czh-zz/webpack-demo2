@@ -9,6 +9,7 @@ module.exports = {
     ...base,
     module: {
         rules: [
+            ...base.module.rules,
             {
                 test: /\.css$/i,
                 //抽成文件：
